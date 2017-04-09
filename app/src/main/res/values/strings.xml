@@ -1,3 +1,8 @@
 <resources>
+
+    <string name="base_url">https://beta.styfi.in</string>
     <string name="app_name">Styfi Assignment</string>
+    <string name="manufacturer_id_label">Manufacturer ID :</string>
+    <string name="manufacturer_data_label">Manufacturer Data :</string>
+
 </resources>

@@ -31,4 +31,12 @@ public class ManufacturerData extends Model {
     public String getManufacturerData() {
         return manufacturerData;
     }
+
+    public void setManufacturerID(String manufacturerID) {
+        this.manufacturerID = manufacturerID;
+    }
+
+    public void setManufacturerData(String manufacturerData) {
+        this.manufacturerData = manufacturerData;
+    }
 }

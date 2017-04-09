@@ -2,6 +2,7 @@ package com.styfi.assignment.presenter;
 
 import android.util.Log;
 
+import com.styfi.assignment.constants.StyfiAssignmentStringConstants;
 import com.styfi.assignment.interactor.ManufacturerDataInteractor;
 import com.styfi.assignment.model.ManufacturerData;
 import com.styfi.assignment.view.ManufacturerView;
@@ -37,10 +38,10 @@ public class ManufacturerDataPresenter implements ManufacturerDataInteractor.OnD
         }
     }
 
-    private void onError() {
+    public void onError() {
         if (mainView != null) {
             mainView.hideProgress();
-            mainView.showMessage("Sorry! Data cannot be loaded right now.");
+            mainView.showMessage(StyfiAssignmentStringConstants.DATA_LOADING_ERROR);
         }
     }
 
@@ -48,10 +49,10 @@ public class ManufacturerDataPresenter implements ManufacturerDataInteractor.OnD
         mainView = null;
     }
 
-    private void onEmptyData() {
+    public void onEmptyData() {
         if (mainView != null) {
             mainView.hideProgress();
-            mainView.showMessage("Sorry! No data available right now.");
+            mainView.showMessage(StyfiAssignmentStringConstants.NO_DATA_AVAILABLE);
         }
     }
 
